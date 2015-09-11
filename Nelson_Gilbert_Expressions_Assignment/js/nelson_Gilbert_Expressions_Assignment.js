@@ -45,5 +45,9 @@ alert("you use " +dataPerc+ "% of the data");
 var otherPhone = 100 - dataPerc;
 
 //alert user to other phones usage percentage
-alert(" the other phone uses " +otherPhone+ "% of the data");
+alert(" the other phone(s) uses " +otherPhone+ "% of the data together");
+
+if (numberPhones > 2) {var eachPhone = (otherPhone / (numberPhones - 1))};
+
+alert("Each other Phone uses " +eachPhone+ "% of the data a piece");
 
