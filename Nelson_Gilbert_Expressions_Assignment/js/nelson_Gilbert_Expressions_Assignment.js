@@ -47,7 +47,9 @@ var otherPhone = 100 - dataPerc;
 //alert user to other phones usage percentage
 alert(" the other phone(s) uses " +otherPhone+ "% of the data together");
 
+//if user has more then 2 phones on the data plan
 if (numberPhones > 2) {var eachPhone = (otherPhone / (numberPhones - 1))};
 
+//alert user of each other phones data usage
 alert("Each other Phone uses " +eachPhone+ "% of the data a piece");
 
