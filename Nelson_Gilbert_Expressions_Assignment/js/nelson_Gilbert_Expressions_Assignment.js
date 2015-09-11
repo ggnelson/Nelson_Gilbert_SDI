@@ -33,4 +33,7 @@ console.log(phoneData);
 var monthlyGB = 10;
 
 //tell them how much data your phone uses
+var dataPerc = (phoneData / monthlyGB) * 100;
 
+//alert user to how much they are using
+alert("you use" +dataPerc+ "% of the data");
