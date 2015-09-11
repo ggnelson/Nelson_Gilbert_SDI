@@ -14,10 +14,12 @@ Expressions
 var data = prompt("Please enter your service carrier.");
 
 // use the variable to tell user what plan he has
-alert("Your plan with "+data+" uses 10 GB a month. ");
+alert("Your plan with "+data+" normally uses 10 GB a month. ");
+
+//What amount equals 100%
+var monthlyGB = prompt("How many GB does your plan have per month to share");
 
 //see how many phones are in the plan
-
 var numberPhones = prompt(" How many phones are on your plan?");
 
 //console.log the answer for the equation
@@ -29,11 +31,19 @@ var phoneData = prompt(" How many GB did your phone use this month");
 //console.log the answer for the equation
 console.log(phoneData);
 
-//What amount equals 100%
-var monthlyGB = 10;
 
 //tell them how much data your phone uses
 var dataPerc = (phoneData / monthlyGB) * 100;
 
+//console.log the answer for extra question
+console.log(dataPerc);
+
 //alert user to how much they are using
-alert("you use" +dataPerc+ "% of the data");
+alert("you use " +dataPerc+ "% of the data");
+
+//the amount of data the other phone uses
+var otherPhone = 100 - dataPerc;
+
+//alert user to other phones usage percentage
+alert(" the other phone uses " +otherPhone+ "% of the data");
+
