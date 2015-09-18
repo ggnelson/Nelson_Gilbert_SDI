@@ -39,24 +39,32 @@ console.log(typesOfHomes[5]);
 //length property - access this by using dot syntax or use a period
 console.log(typesOfHomes.length);
 
+alert(" You just bought a new place to live");
+
+var moniesSpent = prompt("Please enter how much money you spent per square foot.");
+console.log(moniesSpent);
+
+var feetHouse = prompt("What is the Square Foot of the living space");
+console.log(feetHouse);
+
 //Determine what type of house it is by the size
-var squareFoot = prompt(" What is the Square Foot of the Home");
+var squareFoot = moniesSpent*feetHouse;
+console.log(squareFoot);
 
 //assign values to array numbers
 
-if(100 < squareFoot > 1000) {typesOfHomes[0]}
+if(100 < squareFoot && squareFoot < 1000 ) {typesOfHomes[0]
+alert("You bought an apartment")}
 
-if(1001 < squareFoot > 1500){typesOfHomes[1]}
+if(1001 < squareFoot < 1500){typesOfHomes[1]}
 
-if(1501 < squareFoot > 2500){typesOfHomes[2]}
+if(1501 < squareFoot < 2500){typesOfHomes[2]}
 
-if(2501 < squareFoot > 5000){typesOfHomes[3]}
+if(2501 < squareFoot < 5000){typesOfHomes[3]}
 
-if(5001 <squareFoot > 10000){typesOfHomes[4]}
+if(5001 < squareFoot < 10000){typesOfHomes[4]}
 
-else {typesOfHomes[5]
-     alert(" It is a villa")
-}
+else {typesOfHomes[5]}
 
 //Test each item in the array and check if it is a mansion or a condo
 
