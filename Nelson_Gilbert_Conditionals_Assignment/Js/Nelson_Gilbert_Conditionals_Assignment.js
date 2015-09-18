@@ -40,16 +40,25 @@ console.log(typesOfHomes[5]);
 console.log(typesOfHomes.length);
 
 //Determine what type of house it is by the size
-
+var squareFoot = prompt(" What is the Square Foot of the Home");
 
 //assign values to array numbers
-if(200 < squareFoot > 1000) {typesOfHomes[0]}
+
+if(100 < squareFoot > 1000) {typesOfHomes[0]}
+
+if(1001 < squareFoot > 1500){typesOfHomes[1]}
+
+if(1501 < squareFoot > 2500){typesOfHomes[2]}
+
+if(2501 < squareFoot > 5000){typesOfHomes[3]}
+
+if(5001 <squareFoot > 10000){typesOfHomes[4]}
+
+else {typesOfHomes[5]
+     alert(" It is a villa")
+}
 
 //Test each item in the array and check if it is a mansion or a condo
 
 //basic structure of a conditional
 // if(condition to test){code that will run if true} if false it skips it
-
-if(){
-
-}
