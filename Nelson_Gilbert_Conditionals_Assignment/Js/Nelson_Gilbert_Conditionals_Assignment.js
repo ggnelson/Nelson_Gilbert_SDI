@@ -9,9 +9,7 @@ Conditionals
 
 //create an array of homes based off size of floor plan
 
-//Array - variable thar holds multiple variables- erase this
-//Index # of an array always starts with 0 erase this
-
+//Array for types of homes
 var typesOfHomes = ["apartment", "condo", "rancher", "two-story", "mansion", "villa"];
 
 //see entire array
@@ -35,38 +33,60 @@ console.log(typesOfHomes[4]);
 //console.log for villa
 console.log(typesOfHomes[5]);
 
-//how many items are in an array
-//length property - access this by using dot syntax or use a period
+//how many items are in the array
 console.log(typesOfHomes.length);
 
+//Begin interaction with customer
 alert(" You just bought a new place to live");
 
-var moniesSpent = prompt("Please enter how much money you spent per square foot.");
+//variable for money spent
+var moniesSpent = prompt("Please enter how much money you spent.");
 console.log(moniesSpent);
 
-var feetHouse = prompt("What is the Square Foot of the living space");
+//validation for monies spent
+if(moniesSpent === ""){
+    moniesSpent = prompt("Do not leave blank.\n Please enter how much money you spent.");
+}
+if(isNaN(moniesSpent)){
+    moniesSpent = prompt("Please use only numbers.\n Please enter how much money you spent.");
+}
+
+//variable for cost per foot
+var feetHouse = prompt("What is the cost per square foot");
 console.log(feetHouse);
 
-//Determine what type of house it is by the size
-var squareFoot = moniesSpent*feetHouse;
+//validation for monies spent
+if(feetHouse === ""){
+    feetHouse = prompt("Do not leave blank.\n Please enter how much money you spent.");
+}
+if(isNaN(feetHouse)){
+    feetHouse = prompt("Please use only numbers.\n Please enter how much money you spent.");
+}
+
+//variable using moniesSpent and feetHouse to determine size of house
+var squareFoot = (moniesSpent/feetHouse);
 console.log(squareFoot);
 
-//assign values to array numbers
-
-if(100 < squareFoot && squareFoot < 1000 ) {typesOfHomes[0]
+//assign values to array numbers, the squareFoot determines which house is alerted, Conditionals, with alerts attached to each conditional
+//conditional for apartment
+if(100 < squareFoot && squareFoot <= 1000 ) {typesOfHomes[0]
+    //alert for apartment
 alert("You bought an apartment")}
 
-if(1001 < squareFoot < 1500){typesOfHomes[1]}
+//conditional for condo
+if(1001 < squareFoot && squareFoot <= 1500){typesOfHomes[1]
+    //alert for condo
+alert("You bought a condo")}
 
-if(1501 < squareFoot < 2500){typesOfHomes[2]}
+//cn
+if(1501 < squareFoot && squareFoot <= 2500){typesOfHomes[2]
+alert("You bought a rancher")}
 
-if(2501 < squareFoot < 5000){typesOfHomes[3]}
+if(2501 < squareFoot && squareFoot <= 5000){typesOfHomes[3]
+alert("You bought a two-story")}
 
-if(5001 < squareFoot < 10000){typesOfHomes[4]}
+if(5001 < squareFoot && squareFoot <= 10000){typesOfHomes[4]
+alert("You bought a mansion")}
 
-else {typesOfHomes[5]}
-
-//Test each item in the array and check if it is a mansion or a condo
-
-//basic structure of a conditional
-// if(condition to test){code that will run if true} if false it skips it
+else {typesOfHomes[5]
+alert ("You bought a villa")}
