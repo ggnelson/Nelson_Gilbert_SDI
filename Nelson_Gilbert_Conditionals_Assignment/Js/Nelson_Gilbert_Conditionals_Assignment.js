@@ -78,15 +78,22 @@ if(1001 < squareFoot && squareFoot <= 1500){typesOfHomes[1]
     //alert for condo
 alert("You bought a condo")}
 
-//cn
+//conditional for rancher
 if(1501 < squareFoot && squareFoot <= 2500){typesOfHomes[2]
+    //alert for rancher
 alert("You bought a rancher")}
 
+//conditional for two-story
 if(2501 < squareFoot && squareFoot <= 5000){typesOfHomes[3]
+    //alert for two-story
 alert("You bought a two-story")}
 
+//conditional for mansion
 if(5001 < squareFoot && squareFoot <= 10000){typesOfHomes[4]
+    //alert for mansion
 alert("You bought a mansion")}
 
+//else conditional for villa
 else {typesOfHomes[5]
+    //alert for villa
 alert ("You bought a villa")}
