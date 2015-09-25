@@ -106,3 +106,7 @@ alert("The difference between Car A finishing and Car B finishing is "+timeDiffe
 if(timeTotalA < timeTotalB){
     alert("Car A is Faster than Car B");
 }
+
+if(timeTotalB < timeTotalA){
+    alert("Car A is Faster than Car B");
+}
