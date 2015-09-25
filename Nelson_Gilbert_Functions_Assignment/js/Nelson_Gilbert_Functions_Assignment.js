@@ -76,6 +76,7 @@ var carASpeed = function(carA, raceDistance){
 //Car A function call
 var timeTotalA = carASpeed(carA,raceDistance);
 console.log(timeTotalA+"is the total.");
+//alert user of car A time
 alert("It took Car A "+timeTotalA+"hrs");
 
 //ANON Functions for car B
@@ -86,14 +87,16 @@ var carBSpeed = function(carB, raceDistance){
 //Car B function call
 var timeTotalB = carBSpeed(carB,raceDistance);
 console.log(timeTotalB+"is the total.");
-alert("It took Car A "+timeTotalB+"hrs");
+//alert user of car B time
+alert("It took Car B "+timeTotalB+"hrs");
 
 
 //function for time fastest car finished before the slower car
 var timeDifference = raceTime(timeTotalA, timeTotalB);
 raceTime(timeTotalA, timeTotalB);
-
+//console.log the time difference
 console.log("Your time difference is "+timeDifference);
+//final function to see the difference in the two cars time
 function raceTime(totala, totalb) {
 
     var diffTime =Math.abs(totala - totalb) ;
@@ -101,12 +104,14 @@ function raceTime(totala, totalb) {
     //return the value to our main code
     return diffTime;
 }
+//alert the user of the time difference
 alert("The difference between Car A finishing and Car B finishing is "+timeDifference+"hr");
 
+//alert user that car a is faster if the its time is lower than Car B
 if(timeTotalA < timeTotalB){
     alert("Car A is Faster than Car B");
 }
-
+// alert the user that car B is faster than car A if car Bs time is lower than car A
 if(timeTotalB < timeTotalA){
     alert("Car A is Faster than Car B");
 }
