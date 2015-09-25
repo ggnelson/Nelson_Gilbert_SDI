@@ -102,3 +102,7 @@ function raceTime(totala, totalb) {
     return diffTime;
 }
 alert("The difference between Car A finishing and Car B finishing is "+timeDifference+"hr");
+
+if(timeTotalA < timeTotalB){
+    alert("Car A is Faster than Car B");
+}
