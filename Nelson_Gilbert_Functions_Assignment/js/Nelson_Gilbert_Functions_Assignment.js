@@ -113,5 +113,5 @@ if(timeTotalA < timeTotalB){
 }
 // alert the user that car B is faster than car A if car Bs time is lower than car A
 if(timeTotalB < timeTotalA){
-    alert("Car A is Faster than Car B");
+    alert("Car B is Faster than Car A");
 }
